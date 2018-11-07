@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.cdivtc.musicplayertest.MainActivity">
+
+    <EditText
+        android:id="@+id/et_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music/dahai.mp3" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_path"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="播放"
+            android:drawableTop="@drawable/play"
+            android:drawablePadding="3dp"
+            android:onClick="play"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"
+            android:drawableTop="@drawable/pause"
+            android:drawablePadding="3dp"
+            android:onClick="pause"/>
+    </LinearLayout>
+
+</RelativeLayout>
